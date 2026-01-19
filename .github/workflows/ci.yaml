@@ -32,5 +32,6 @@ jobs:
 
       - name: Update Helm values.yaml image tag
         run: |
-          sed -i "s/tag:.*/tag: ${GITHUB_SHA}/" helm/values.yaml
+          sed -i "s/^  tag:.*/  tag: ${GITHUB_SHA}/" helm/values.yaml
+
 
