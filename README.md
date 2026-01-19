@@ -160,7 +160,6 @@ These dashboards provide clear visibility into:
 
 ---
 
-## ✅ Key Learnings & Outcomes
 
 * Built a production-style backend using FastAPI
 * Containerized applications for portability
