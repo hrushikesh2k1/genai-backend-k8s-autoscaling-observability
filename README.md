@@ -75,4 +75,6 @@ Click on Import dashboard> enter the ID: 15757 for pod dashboard
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/57d93314-9c6a-41a1-aab5-8528e2282140" />
 The below dashboard is for Pods
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7927d241-8fd1-43fc-b811-ae78735cc3c4" />
-Below is for hpa
+Below is for hpa (ID: 22128)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/928d5fc6-3f7b-452b-880e-2b0fc2221be2" />
+
