@@ -39,6 +39,8 @@ jobs:
 
       - name: Commit updated Helm values.yaml
         run: |
+          git config --global user.email "hrushikeshboora@gmail.com"
+          git config --global user.name "hrushikesh"
           git add helm/values.yaml
           git commit -m "ci: update image tag to ${GITHUB_SHA}" || echo "No changes to commit"
           git push
