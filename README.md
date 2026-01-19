@@ -98,9 +98,7 @@ kubectl apply -f k8s/
 
 Generate continuous load to trigger scaling:
 
-```bash
-while true; do curl -s http://localhost:30007/health > /dev/null; done
-```
+Use the load-test.sh script and observe the CPU usage metrics.
 
 ### Observations
 
