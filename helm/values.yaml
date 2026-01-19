@@ -9,7 +9,7 @@ replicaCount: 1
 image:
   repository: hrushikesh2k1/genai-service
   pullPolicy: IfNotPresent
-  tag: 5977f6f3c6769fb68a3e258406401fe90392cf5f
+  tag: d2b4be04a902ee59ad3293cbe9c4f57dbccb8edc
 
 
 # This is for setting up a service more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/
