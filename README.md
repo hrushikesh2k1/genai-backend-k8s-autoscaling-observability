@@ -159,7 +159,7 @@ These dashboards provide clear visibility into:
 * Kubernetes workload behavior
 
 ---
-
+## Key-Take aways!
 
 * Built a production-style backend using FastAPI
 * Containerized applications for portability
