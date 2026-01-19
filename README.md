@@ -159,6 +159,61 @@ These dashboards provide clear visibility into:
 * Kubernetes workload behavior
 
 ---
+
+## Step 5: 🚀 CI/CD with Docker, GitHub Actions & Helm
+
+This project implements a realistic CI/CD workflow for a Kubernetes-based application using Docker, GitHub Actions, and Helm.
+
+🔁 CI: Continuous Integration (Build & Publish)
+Objective
+Automate the process of:
+
+  Building the application image
+  Versioning it immutably
+  Publishing it to a container registry
+
+Implementation
+
+A GitHub Actions workflow is triggered on every push to the main branch. The CI pipeline performs the following steps:
+  Checkout source code
+  Build Docker image using Docker Buildx
+  Tag the image with the Git commit SHA
+  Push the image to Docker Hub
+
+📦 Helm for Application Packaging
+
+The Kubernetes manifests (Deployment, Service, HPA) are packaged into a Helm chart, which provides:
+
+  Parameterization via values.yaml
+  Clean separation of configuration and templates
+  Release versioning and rollback support
+
+Key configurable values:
+
+Docker image repository and tag
+Resource requests and limits
+HPA configuration (min/max replicas, CPU target)
+Service type and ports
+
+🔄 Release Management & Rollbacks
+
+Helm enables full release lifecycle management:
+
+Install / Upgrade
+```bash
+helm upgrade --install genai helm
+```
+View release history
+```bash
+helm history genai
+```
+Rollback to a previous version
+```bash
+helm rollback genai <REVISION>
+```
+
+This provides production-grade safety during deployments.
+
 ## Key-Take aways!
 
 * Built a production-style backend using FastAPI
@@ -212,4 +267,6 @@ DevOps Engineer | Kubernetes | Cloud | Observability
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7927d241-8fd1-43fc-b811-ae78735cc3c4" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/928d5fc6-3f7b-452b-880e-2b0fc2221be2" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c7aeeb9b-b6f5-4e50-908d-b9a8b424f640" />
 
